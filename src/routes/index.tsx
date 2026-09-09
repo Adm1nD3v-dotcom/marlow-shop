@@ -56,23 +56,36 @@ function Home() {
             them. Open now. Card on Stripe.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <button
-              type="button"
-              className={cn(buttonVariants({ size: "lg" }))}
-              onClick={() => {
-                const url = stripePayUrl({ productId: "halo", qty: 1 });
-                if (url) window.location.assign(url);
-              }}
-            >
-              Buy Halo {halo ? money(halo.price) : ""}
-            </button>
             {kit ? (
+              <button
+                type="button"
+                className={cn(buttonVariants({ size: "lg" }))}
+                onClick={() => {
+                  const url = stripePayUrl({ productId: "kit", qty: 1 });
+                  if (url) window.location.assign(url);
+                }}
+              >
+                Buy the evening kit {money(kit.price)}
+              </button>
+            ) : (
+              <button
+                type="button"
+                className={cn(buttonVariants({ size: "lg" }))}
+                onClick={() => {
+                  const url = stripePayUrl({ productId: "halo", qty: 1 });
+                  if (url) window.location.assign(url);
+                }}
+              >
+                Buy Halo {halo ? money(halo.price) : ""}
+              </button>
+            )}
+            {halo ? (
               <Link
                 to="/product/$slug"
-                params={{ slug: kit.slug }}
+                params={{ slug: halo.slug }}
                 className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}
               >
-                Evening kit {money(kit.price)}
+                Halo lantern {money(halo.price)}
               </Link>
             ) : (
               <Link to="/shop" className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}>
