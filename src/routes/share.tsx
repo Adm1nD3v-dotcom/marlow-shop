@@ -12,7 +12,7 @@ const posts = [
     price: "$39",
     url: stripeLinks.halo,
     caption:
-      "Halo — rechargeable patio lantern for the table. USB-C, eight-hour burn, amber field. $39. Free tracked US shipping.",
+      "Halo patio lantern. USB-C recharge, eight-hour amber. Sit it on the table tonight. $39. Free tracked US shipping.",
   },
   {
     id: "kit",
@@ -20,7 +20,7 @@ const posts = [
     price: "$62",
     url: stripeLinks.kit,
     caption:
-      "The evening kit: Halo lantern + 10m solar filament lights. $62 for the pair. Table and pergola. Free tracked US shipping.",
+      "Evening kit: Halo lantern + 10m solar filament. Table and pergola in one box. $62. Free tracked US shipping.",
   },
   {
     id: "filament",
@@ -28,7 +28,7 @@ const posts = [
     price: "$28",
     url: stripeLinks.filament,
     caption:
-      "Filament — 10m solar string lights, dusk-to-dawn, no outdoor outlet. $28. Free tracked US shipping.",
+      "Filament — 10m solar string lights. Dusk-to-dawn, no outdoor outlet. $28. Free tracked US shipping.",
   },
   {
     id: "kiln",
