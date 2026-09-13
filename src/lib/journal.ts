@@ -10,6 +10,16 @@ export const posts = [
     ],
   },
   {
+    slug: "sunday-dusk",
+    title: "Sunday dusk is the product",
+    dek: "The kit is not two SKUs. It is one evening: table first, then the string.",
+    productSlug: "evening-kit",
+    body: [
+      "Charge Halo at noon. Hang Filament where the last hour of sky still hits the panel. When the yard goes blue, the table is already warm and the pergola is already on.",
+      "That is what $62 buys. No countdown. No leftover stock story. Pack from the US warehouse when the charge clears.",
+    ],
+  },
+  {
     slug: "how-marlow-ships",
     title: "How Marlow ships",
     dek: "Paid, then the warehouse. Nothing sits on a shelf of ours.",

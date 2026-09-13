@@ -31,6 +31,14 @@ const posts = [
       "Filament — 10m solar string lights. Dusk-to-dawn, no outdoor outlet. $28. Free tracked US shipping.",
   },
   {
+    id: "meadow",
+    name: "Meadow throw",
+    price: "$48",
+    url: stripeLinks.meadow,
+    caption:
+      "Meadow — washable outdoor throw for the last hour on the chair. $48. Free tracked US shipping.",
+  },
+  {
     id: "kiln",
     name: "Kiln tumbler",
     price: "$24",
@@ -60,7 +68,7 @@ export const Route = createFileRoute("/share")({
   head: () =>
     pageHead({
       title: "Share Marlow — live pay links",
-      description: "Live Stripe links for Halo, the evening kit, Filament, and Kiln. Card checkout. US shipping.",
+      description: "Live Stripe links for Halo, the evening kit, Filament, Meadow, and Kiln. Card checkout. US shipping.",
       path: "/share",
     }),
   component: SharePage,
