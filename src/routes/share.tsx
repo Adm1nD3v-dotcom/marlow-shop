@@ -32,11 +32,11 @@ const posts = [
   },
   {
     id: "meadow",
-    name: "Meadow throw",
-    price: "$48",
+    name: "Meadow picnic cloth",
+    price: "$24",
     url: stripeLinks.meadow,
     caption:
-      "Meadow — washable outdoor throw for the last hour on the chair. $48. Free tracked US shipping.",
+      "Meadow — waterproof picnic cloth. Bone canvas, folds into itself. $24. Free tracked US shipping.",
   },
   {
     id: "kiln",
