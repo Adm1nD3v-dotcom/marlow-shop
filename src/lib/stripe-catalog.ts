@@ -39,6 +39,9 @@ export function stripePayUrl(args: {
   const qty = Math.max(1, args.qty ?? 1);
   if (qty > 1) url.searchParams.set("quantity", String(qty));
   if (args.email) url.searchParams.set("prefilled_email", args.email);
-  if (args.clientReferenceId) url.searchParams.set("client_reference_id", args.clientReferenceId);
+  url.searchParams.set(
+    "client_reference_id",
+    args.clientReferenceId ?? `marlow:${args.productId}`,
+  );
   return url.toString();
 }

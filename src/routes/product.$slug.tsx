@@ -92,15 +92,15 @@ function ProductPage() {
             <p className="mt-6 text-sm text-sage">In stock · ships 5–9 days</p>
             <div className="mt-6 hidden lg:flex lg:flex-wrap lg:items-center lg:gap-3">
               <QtyStepper value={qty} onChange={setQty} />
-              <Button size="lg" onClick={() => add(true)}>
-                Add to bag
+              <Button size="lg" onClick={buyNow}>
+                Buy now · {money(product.price)}
               </Button>
               <button
                 type="button"
                 className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}
-                onClick={buyNow}
+                onClick={() => add(true)}
               >
-                Buy now
+                Add to bag
               </button>
             </div>
             <p className="mt-4 text-xs text-subtle">
