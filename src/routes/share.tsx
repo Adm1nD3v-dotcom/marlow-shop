@@ -57,24 +57,24 @@ const posts = [
   },
   {
     id: "globe",
-    name: "Globe lantern",
-    price: "$34",
+    name: "Globe solar lights",
+    price: "$22",
     caption:
-      "Globe — hanging solar lantern for the hook by the door. $34. Free tracked US shipping.",
+      "Globe — two cracked-glass solar globes for the table. $22. Free tracked US shipping.",
   },
   {
     id: "sconce",
-    name: "Sconce wall light",
-    price: "$29",
+    name: "Sconce wall lights",
+    price: "$28",
     caption:
-      "Sconce — solar wall wash for the fence or stoop. $29. Free tracked US shipping.",
+      "Sconce — two solar wall lights for the fence or stoop. $28. Free tracked US shipping.",
   },
   {
     id: "torch",
-    name: "Torch",
+    name: "Torch solar stakes",
     price: "$32",
     caption:
-      "Torch — solar stake flame for the path edge. $32. Free tracked US shipping.",
+      "Torch — four solar flicker stakes for the path edge. No open fire. $32. Free tracked US shipping.",
   },
 ];
 
