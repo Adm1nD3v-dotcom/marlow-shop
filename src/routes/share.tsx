@@ -11,14 +11,14 @@ const posts = [
     name: "Halo lantern",
     price: "$39",
     caption:
-      "Halo patio lantern. USB-C recharge, eight-hour amber. Sit it on the table tonight. $39. Free tracked US shipping.",
+      "Halo — rechargeable patio lantern for the table. USB-C, eight-hour amber, IPX4. $39. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "kit",
     name: "Evening kit",
     price: "$62",
     caption:
-      "Evening kit: Halo lantern + 10m solar filament. Table and pergola in one order. $62. Free tracked US shipping.",
+      "Evening kit — Halo lantern + 10m solar filament. Table and pergola, one checkout. $62. Free tracked US shipping.",
   },
   {
     id: "filament",

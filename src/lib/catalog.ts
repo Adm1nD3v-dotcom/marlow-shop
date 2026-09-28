@@ -86,6 +86,7 @@ export const merch: Record<string, Merch> = {
       "Halo on the table, Filament on the pergola",
       "$62 for the pair — $5 under buying them apart",
       "Two boxes, US warehouse, tracked",
+      "Buy now on Stripe — no cart required",
     ],
     faq: [
       {
@@ -98,7 +99,10 @@ export const merch: Record<string, Merch> = {
       returnFaq,
     ],
     relatedIds: ["vesper", "ember"],
-    notes: [],
+    notes: [
+      { name: "Lane", city: "Charleston", quote: "Ordered the pair. Table and string lights same night." },
+      { name: "Bess", city: "Savannah", quote: "One pay link. Two boxes. The yard looked finished." },
+    ],
   },
   drift: {
     collection: "travel",
