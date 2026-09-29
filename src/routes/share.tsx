@@ -7,18 +7,18 @@ import { stripeLinks, stripePayUrl } from "@/lib/stripe-catalog";
 
 const posts = [
   {
+    id: "kit",
+    name: "Evening kit",
+    price: "$62",
+    caption:
+      "Evening kit — Halo lantern + 10m solar filament. Table and pergola, one Stripe checkout. $62. Free tracked US shipping. We pack when the charge clears.",
+  },
+  {
     id: "halo",
     name: "Halo lantern",
     price: "$39",
     caption:
       "Halo — rechargeable patio lantern for the table. USB-C, eight-hour amber, IPX4. $39. Free tracked US shipping. Card on Stripe.",
-  },
-  {
-    id: "kit",
-    name: "Evening kit",
-    price: "$62",
-    caption:
-      "Evening kit — Halo lantern + 10m solar filament. Table and pergola, one checkout. $62. Free tracked US shipping.",
   },
   {
     id: "filament",
@@ -82,7 +82,7 @@ export const Route = createFileRoute("/share")({
   head: () =>
     pageHead({
       title: "Share Marlow — live pay links",
-      description: "Live Stripe links for Halo, the evening kit, Filament, Meadow, and patio pieces. Card checkout. US shipping.",
+      description: "Live Stripe links for the evening kit, Halo, Filament, Meadow, and patio pieces. Card checkout. US shipping.",
       path: "/share",
     }),
   component: SharePage,
@@ -111,8 +111,7 @@ function SharePage() {
         <p className="text-xs tracking-[0.22em] text-sage uppercase">Open · pay links</p>
         <h1 className="mt-3 font-display text-4xl tracking-tight">Share these. They take cards.</h1>
         <p className="mt-3 text-muted leading-relaxed">
-          These go straight to Stripe. No cart, no preview. Send Halo or the kit. We pack when the
-          charge clears.
+          These go straight to Stripe. Lead with the evening kit. Send Halo if they only want the lantern. We pack when the charge clears.
         </p>
         <ul className="mt-10 space-y-4">
           {posts.map((p) => {
@@ -127,17 +126,17 @@ function SharePage() {
                   href={url}
                   className="mt-2 block break-all text-sm text-sage underline-offset-4 hover:underline"
                 >
-                  {url}
+                  {stripeLinks[p.id]}
                 </a>
                 <p className="mt-4 text-sm leading-relaxed text-muted">{p.caption}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <Button type="button" onClick={() => copy(`${p.id}-url`, url)}>
+                  <Button type="button" onClick={() => copy(`${p.id}-url`, stripeLinks[p.id])}>
                     {copied === `${p.id}-url` ? "Copied link" : "Copy pay link"}
                   </Button>
                   <Button
                     type="button"
                     variant="ghost"
-                    onClick={() => copy(`${p.id}-cap`, `${p.caption}\n${url}`)}
+                    onClick={() => copy(`${p.id}-cap`, `${p.caption}\n${stripeLinks[p.id]}`)}
                   >
                     {copied === `${p.id}-cap` ? "Copied post" : "Copy post"}
                   </Button>
