@@ -9,7 +9,6 @@ import { useRelay } from "@/lib/store";
 import { stripePayUrl } from "@/lib/stripe-catalog";
 import { cn } from "@/lib/utils";
 
-
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
@@ -20,6 +19,11 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
+function pay(productId: string) {
+  const url = stripePayUrl({ productId, qty: 1 });
+  if (url) window.location.assign(url);
+}
+
 function Home() {
   const all = useRelay((s) => s.products);
   const products = all.filter((p) => p.status !== "killed");
@@ -29,7 +33,6 @@ function Home() {
     .filter((p) => merchFor(p.id).trending)
     .sort((a, b) => b.launchedAt - a.launchedAt)
     .slice(0, 6);
-
 
   return (
     <StoreShell>
@@ -52,46 +55,32 @@ function Home() {
             Keep the night.
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-bone/80 sm:text-lg">
-            Rechargeable patio lanterns, solar string lights, and the few things that belong beside
-            them. Open now. Card on Stripe.
+            The evening kit is the Halo lantern plus 10m Filament solar lights. $62 on Stripe. Free tracked US shipping.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              className={cn(buttonVariants({ size: "lg" }))}
+              onClick={() => pay("kit")}
+            >
+              Buy the evening kit {kit ? money(kit.price) : "$62"}
+            </button>
+            <button
+              type="button"
+              className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}
+              onClick={() => pay("halo")}
+            >
+              Buy Halo {halo ? money(halo.price) : "$39"}
+            </button>
             {kit ? (
-              <button
-                type="button"
-                className={cn(buttonVariants({ size: "lg" }))}
-                onClick={() => {
-                  const url = stripePayUrl({ productId: "kit", qty: 1 });
-                  if (url) window.location.assign(url);
-                }}
-              >
-                Buy the evening kit {money(kit.price)}
-              </button>
-            ) : (
-              <button
-                type="button"
-                className={cn(buttonVariants({ size: "lg" }))}
-                onClick={() => {
-                  const url = stripePayUrl({ productId: "halo", qty: 1 });
-                  if (url) window.location.assign(url);
-                }}
-              >
-                Buy Halo {halo ? money(halo.price) : ""}
-              </button>
-            )}
-            {halo ? (
               <Link
                 to="/product/$slug"
-                params={{ slug: halo.slug }}
-                className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}
+                params={{ slug: kit.slug }}
+                className="text-sm text-bone/80 underline-offset-4 hover:underline"
               >
-                Halo lantern {money(halo.price)}
+                Kit details
               </Link>
-            ) : (
-              <Link to="/shop" className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}>
-                The line
-              </Link>
-            )}
+            ) : null}
           </div>
         </div>
       </section>
@@ -107,7 +96,7 @@ function Home() {
               <img src={kit.image} alt={kit.name} className="aspect-[4/5] w-full object-cover sm:aspect-[5/4]" />
             </Link>
             <div>
-              <p className="text-xs tracking-[0.22em] text-sage uppercase">The pair</p>
+              <p className="text-xs tracking-[0.22em] text-sage uppercase">The pair · marlow_kit</p>
               <h2 className="mt-3 font-display text-3xl tracking-tight sm:text-4xl">Evening kit · {money(kit.price)}</h2>
               <p className="mt-4 max-w-md text-muted leading-relaxed">{kit.description}</p>
               <p className="mt-3 text-xs text-subtle">
@@ -117,10 +106,7 @@ function Home() {
                 <button
                   type="button"
                   className={cn(buttonVariants({ size: "lg" }))}
-                  onClick={() => {
-                    const url = stripePayUrl({ productId: "kit", qty: 1 });
-                    if (url) window.location.assign(url);
-                  }}
+                  onClick={() => pay("kit")}
                 >
                   Buy the kit {money(kit.price)}
                 </button>
@@ -177,9 +163,7 @@ function Home() {
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
                 <p className="text-xs tracking-[0.22em] text-sage uppercase">Now</p>
-                <h2 className="mt-2 font-display text-3xl tracking-tight sm:text-4xl">
-                  This week
-                </h2>
+                <h2 className="mt-2 font-display text-3xl tracking-tight sm:text-4xl">This week</h2>
                 <p className="mt-2 max-w-lg text-sm text-muted">
                   New in the line. Priced under a typical listing. No fake countdowns.
                 </p>
@@ -228,12 +212,9 @@ function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="text-xs tracking-[0.22em] text-sage uppercase">Open</p>
-            <h2 className="mt-3 font-display text-3xl tracking-tight sm:text-4xl">
-              Pay, then the warehouse.
-            </h2>
+            <h2 className="mt-3 font-display text-3xl tracking-tight sm:text-4xl">Pay, then the warehouse.</h2>
             <p className="mt-4 max-w-md text-muted leading-relaxed">
-              Card on Stripe. We pack when the charge clears. Tracked in 5–9 days from the US
-              warehouse. Free shipping on every order.
+              Card on Stripe. We pack when the charge clears. Tracked in 5–9 days from the US warehouse. Free shipping on every order.
             </p>
             <Link to="/policies" className={cn("mt-8", buttonVariants({ variant: "ghost" }))}>
               Shipping & returns
