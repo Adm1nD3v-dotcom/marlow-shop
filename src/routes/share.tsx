@@ -12,7 +12,7 @@ const posts = [
     price: "$62",
     sku: "marlow_kit",
     caption:
-      "Evening kit — Halo lantern + 10m Filament solar lights. $62 for the pair, $5 under buying them apart. Free tracked US shipping. Card on Stripe. We pack when the charge clears.",
+      "Evening kit — Halo lantern + 10m Filament solar lights. $62 for the pair, $5 under buying them apart. Table and pergola. Free tracked US shipping. Card on Stripe. We pack when the charge clears.",
   },
   {
     id: "halo",
@@ -142,7 +142,10 @@ function SharePage() {
                 </a>
                 <p className="mt-4 text-sm leading-relaxed text-muted">{p.caption}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  <Button type="button" onClick={() => copy(`${p.id}-url`, stripeLinks[p.id])}>
+                  <Button type="button" onClick={() => window.location.assign(url)}>
+                    Open Stripe
+                  </Button>
+                  <Button type="button" variant="ghost" onClick={() => copy(`${p.id}-url`, stripeLinks[p.id])}>
                     {copied === `${p.id}-url` ? "Copied link" : "Copy pay link"}
                   </Button>
                   <Button
