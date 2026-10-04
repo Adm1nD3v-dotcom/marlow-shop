@@ -12,7 +12,7 @@ const posts = [
     price: "$62",
     sku: "marlow_kit",
     caption:
-      "Evening kit — Halo lantern + 10m Filament solar lights. $62 for the pair, $5 under buying them apart. Table and pergola. Free tracked US shipping. Card on Stripe. We pack when the charge clears.",
+      "Hosting this evening? Halo on the table, 10m Filament on the pergola. The pair is $62 — $5 under buying them apart. Free tracked US shipping. Card on Stripe. We pack when the charge clears.",
   },
   {
     id: "halo",
@@ -100,7 +100,7 @@ export const Route = createFileRoute("/share")({
 });
 
 function payUrl(id: string) {
-  return stripePayUrl({ productId: id }) ?? stripeLinks[id];
+  return stripePayUrl({ productId: id, clientReferenceId: `marlow:${id}` }) ?? stripeLinks[id];
 }
 
 function SharePage() {
@@ -122,7 +122,7 @@ function SharePage() {
         <p className="text-xs tracking-[0.22em] text-sage uppercase">Open · pay links</p>
         <h1 className="mt-3 font-display text-4xl tracking-tight">Share the kit first.</h1>
         <p className="mt-3 text-muted leading-relaxed">
-          These go straight to Stripe. No cart. The evening kit is marlow_kit at $62 — Halo lantern plus 10m Filament. We pack when the charge clears.
+          These go straight to Stripe. No cart. The evening kit is marlow_kit at $62 — Halo lantern plus 10m Filament. Copied links include client_reference_id marlow:kit so the charge is attributable. We pack when the charge clears.
         </p>
         <ul className="mt-10 space-y-4">
           {posts.map((p) => {
@@ -138,20 +138,20 @@ function SharePage() {
                   href={url}
                   className="mt-2 block break-all text-sm text-sage underline-offset-4 hover:underline"
                 >
-                  {stripeLinks[p.id]}
+                  {url}
                 </a>
                 <p className="mt-4 text-sm leading-relaxed text-muted">{p.caption}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   <Button type="button" onClick={() => window.location.assign(url)}>
                     Open Stripe
                   </Button>
-                  <Button type="button" variant="ghost" onClick={() => copy(`${p.id}-url`, stripeLinks[p.id])}>
+                  <Button type="button" variant="ghost" onClick={() => copy(`${p.id}-url`, url)}>
                     {copied === `${p.id}-url` ? "Copied link" : "Copy pay link"}
                   </Button>
                   <Button
                     type="button"
                     variant="ghost"
-                    onClick={() => copy(`${p.id}-cap`, `${p.caption}\n${stripeLinks[p.id]}`)}
+                    onClick={() => copy(`${p.id}-cap`, `${p.caption}\n${url}`)}
                   >
                     {copied === `${p.id}-cap` ? "Copied post" : "Copy post"}
                   </Button>
