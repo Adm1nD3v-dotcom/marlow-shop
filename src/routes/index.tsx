@@ -33,6 +33,7 @@ function Home() {
     .filter((p) => merchFor(p.id).trending)
     .sort((a, b) => b.launchedAt - a.launchedAt)
     .slice(0, 6);
+  const kitPrice = kit ? money(kit.price) : "$62";
 
   return (
     <StoreShell>
@@ -55,7 +56,7 @@ function Home() {
             Keep the night.
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-bone/80 sm:text-lg">
-            The evening kit is the Halo lantern plus 10m Filament solar lights. $62 on Stripe. Free tracked US shipping.
+            The evening kit is the Halo lantern plus 10m Filament solar lights. {kitPrice} on Stripe. Free tracked US shipping.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <button
@@ -63,7 +64,7 @@ function Home() {
               className={cn(buttonVariants({ size: "lg" }))}
               onClick={() => pay("kit")}
             >
-              Buy the evening kit {kit ? money(kit.price) : "$62"}
+              Buy the evening kit {kitPrice}
             </button>
             <button
               type="button"
@@ -209,7 +210,7 @@ function Home() {
       ) : null}
 
       <section className="border-t border-line">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 pb-28 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center lg:pb-24">
           <div>
             <p className="text-xs tracking-[0.22em] text-sage uppercase">Open</p>
             <h2 className="mt-3 font-display text-3xl tracking-tight sm:text-4xl">Pay, then the warehouse.</h2>
@@ -237,6 +238,16 @@ function Home() {
           </ul>
         </div>
       </section>
+
+      <div className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-ink/95 p-3 backdrop-blur-sm lg:hidden">
+        <button
+          type="button"
+          className={cn(buttonVariants({ size: "lg" }), "w-full")}
+          onClick={() => pay("kit")}
+        >
+          Buy the evening kit {kitPrice}
+        </button>
+      </div>
     </StoreShell>
   );
 }
