@@ -31,12 +31,28 @@ const posts = [
       "Filament — 10m solar string lights. Dusk-to-dawn, no outdoor outlet. $28. Free tracked US shipping.",
   },
   {
-    id: "meadow",
-    name: "Meadow picnic cloth",
+    id: "drift",
+    name: "Drift dry bag",
     price: "$24",
-    sku: "marlow_meadow",
+    sku: "marlow_drift",
     caption:
-      "Meadow — waterproof picnic cloth. Bone canvas, folds into itself. $24. Free tracked US shipping.",
+      "Drift — 10L roll-top dry bag in matte sage. Keep the night kit dry. $24. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "shore",
+    name: "Shore picnic tote",
+    price: "$42",
+    sku: "marlow_shore",
+    caption:
+      "Shore — insulated picnic tote. Two people, one evening. $42. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "vesper",
+    name: "Vesper patio oil",
+    price: "$16",
+    sku: "marlow_vesper",
+    caption:
+      "Vesper — amber glass patio oil, two-pack. A quieter table. $16. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "kiln",
@@ -45,6 +61,38 @@ const posts = [
     sku: "marlow_kiln",
     caption:
       "Kiln — 32oz insulated sip bottle. Unbranded bone steel. $24. Free tracked US shipping.",
+  },
+  {
+    id: "pulse",
+    name: "Pulse blender bottle",
+    price: "$28",
+    sku: "marlow_pulse",
+    caption:
+      "Pulse — USB-C personal blender, 22oz cup. Breakfast in twenty seconds. $28. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "meadow",
+    name: "Meadow picnic cloth",
+    price: "$24",
+    sku: "marlow_meadow",
+    caption:
+      "Meadow — waterproof picnic cloth. Bone canvas, folds into itself. $24. Free tracked US shipping.",
+  },
+  {
+    id: "ember",
+    name: "Ember flame lamp",
+    price: "$34",
+    sku: "marlow_ember",
+    caption:
+      "Ember — LED flame in smoked glass. No heat, no oil. The indoor dusk. $34. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "field",
+    name: "Field grooming glove",
+    price: "$14",
+    sku: "marlow_field",
+    caption:
+      "Field — sage silicone grooming glove, right-hand. $14. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "stake",
