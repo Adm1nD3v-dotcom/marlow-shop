@@ -12,7 +12,7 @@ const posts = [
     price: "$62",
     sku: "marlow_kit",
     caption:
-      "Evening kit — Halo lantern + 10m Filament solar lights. $62 for the pair, $5 under buying them apart. Free tracked US shipping. Card on Stripe. If this clears, pack 1 Halo rechargeable lantern and 1 Filament 10m solar string to the Stripe address.",
+      "Evening kit \u2014 Halo lantern + 10m Filament solar lights. $62 for the pair, $5 under buying them apart. Two boxes, same order, US warehouse. Free tracked US shipping. Card on Stripe. If this clears, pack 1 Halo rechargeable lantern and 1 Filament 10m solar string to the Stripe address.",
   },
   {
     id: "halo",
@@ -20,7 +20,7 @@ const posts = [
     price: "$39",
     sku: "marlow_halo",
     caption:
-      "Halo — rechargeable patio lantern for the table. USB-C, eight-hour amber, IPX4. $39. Free tracked US shipping. Card on Stripe.",
+      "Halo \u2014 rechargeable patio lantern for the table. USB-C, eight-hour amber, IPX4. $39. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "filament",
@@ -28,7 +28,7 @@ const posts = [
     price: "$28",
     sku: "marlow_filament",
     caption:
-      "Filament — 10m solar string lights. Dusk-to-dawn, no outdoor outlet. $28. Free tracked US shipping.",
+      "Filament \u2014 10m solar string lights. Dusk-to-dawn, no outdoor outlet. $28. Free tracked US shipping.",
   },
   {
     id: "drift",
@@ -36,7 +36,7 @@ const posts = [
     price: "$24",
     sku: "marlow_drift",
     caption:
-      "Drift — 10L roll-top dry bag in matte sage. Keep the night kit dry. $24. Free tracked US shipping. Card on Stripe.",
+      "Drift \u2014 10L roll-top dry bag in matte sage. Keep the night kit dry. $24. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "shore",
@@ -44,7 +44,7 @@ const posts = [
     price: "$42",
     sku: "marlow_shore",
     caption:
-      "Shore — insulated picnic tote. Two people, one evening. $42. Free tracked US shipping. Card on Stripe.",
+      "Shore \u2014 insulated picnic tote. Two people, one evening. $42. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "vesper",
@@ -52,7 +52,7 @@ const posts = [
     price: "$16",
     sku: "marlow_vesper",
     caption:
-      "Vesper — amber glass patio oil, two-pack. A quieter table. $16. Free tracked US shipping. Card on Stripe.",
+      "Vesper \u2014 amber glass patio oil, two-pack. A quieter table. $16. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "kiln",
@@ -60,7 +60,7 @@ const posts = [
     price: "$24",
     sku: "marlow_kiln",
     caption:
-      "Kiln — 32oz insulated sip bottle. Unbranded bone steel. $24. Free tracked US shipping.",
+      "Kiln \u2014 32oz insulated sip bottle. Unbranded bone steel. $24. Free tracked US shipping.",
   },
   {
     id: "pulse",
@@ -68,7 +68,7 @@ const posts = [
     price: "$28",
     sku: "marlow_pulse",
     caption:
-      "Pulse — USB-C personal blender, 22oz cup. Breakfast in twenty seconds. $28. Free tracked US shipping. Card on Stripe.",
+      "Pulse \u2014 USB-C personal blender, 22oz cup. Breakfast in twenty seconds. $28. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "meadow",
@@ -76,7 +76,7 @@ const posts = [
     price: "$24",
     sku: "marlow_meadow",
     caption:
-      "Meadow — waterproof picnic cloth. Bone canvas, folds into itself. $24. Free tracked US shipping.",
+      "Meadow \u2014 waterproof picnic cloth. Bone canvas, folds into itself. $24. Free tracked US shipping.",
   },
   {
     id: "ember",
@@ -84,7 +84,7 @@ const posts = [
     price: "$34",
     sku: "marlow_ember",
     caption:
-      "Ember — LED flame in smoked glass. No heat, no oil. The indoor dusk. $34. Free tracked US shipping. Card on Stripe.",
+      "Ember \u2014 LED flame in smoked glass. No heat, no oil. The indoor dusk. $34. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "field",
@@ -92,7 +92,7 @@ const posts = [
     price: "$14",
     sku: "marlow_field",
     caption:
-      "Field — sage silicone grooming glove, right-hand. $14. Free tracked US shipping. Card on Stripe.",
+      "Field \u2014 sage silicone grooming glove, right-hand. $14. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "stake",
@@ -100,7 +100,7 @@ const posts = [
     price: "$24",
     sku: "marlow_stake",
     caption:
-      "Stake — six solar pathway lights, warm amber. $24. Free tracked US shipping.",
+      "Stake \u2014 six solar pathway lights, warm amber. $24. Free tracked US shipping.",
   },
   {
     id: "wick",
@@ -108,7 +108,7 @@ const posts = [
     price: "$24",
     sku: "marlow_wick",
     caption:
-      "Wick — three rechargeable LED candles. Indoor dusk, no wax. $24. Free tracked US shipping.",
+      "Wick \u2014 three rechargeable LED candles. Indoor dusk, no wax. $24. Free tracked US shipping.",
   },
   {
     id: "globe",
@@ -116,7 +116,7 @@ const posts = [
     price: "$22",
     sku: "marlow_globe",
     caption:
-      "Globe — two cracked-glass solar globes for the table. $22. Free tracked US shipping.",
+      "Globe \u2014 two cracked-glass solar globes for the table. $22. Free tracked US shipping.",
   },
   {
     id: "sconce",
@@ -124,7 +124,7 @@ const posts = [
     price: "$28",
     sku: "marlow_sconce",
     caption:
-      "Sconce — two solar wall lights for the fence or stoop. $28. Free tracked US shipping.",
+      "Sconce \u2014 two solar wall lights for the fence or stoop. $28. Free tracked US shipping.",
   },
   {
     id: "torch",
@@ -132,14 +132,14 @@ const posts = [
     price: "$32",
     sku: "marlow_torch",
     caption:
-      "Torch — four solar flicker stakes for the path edge. No open fire. $32. Free tracked US shipping.",
+      "Torch \u2014 four solar flicker stakes for the path edge. No open fire. $32. Free tracked US shipping.",
   },
 ];
 
 export const Route = createFileRoute("/share")({
   head: () =>
     pageHead({
-      title: "Share Marlow — live pay links",
+      title: "Share Marlow \u2014 live pay links",
       description:
         "Live Stripe links for the evening kit, Halo, Filament, and patio pieces. Card checkout. US shipping.",
       path: "/share",
@@ -167,10 +167,10 @@ function SharePage() {
   return (
     <StoreShell>
       <main className="mx-auto max-w-2xl px-4 py-12 sm:px-6 sm:py-16">
-        <p className="text-xs tracking-[0.22em] text-sage uppercase">Open · pay links</p>
+        <p className="text-xs tracking-[0.22em] text-sage uppercase">Open \u00b7 pay links</p>
         <h1 className="mt-3 font-display text-4xl tracking-tight">Share the kit first.</h1>
         <p className="mt-3 text-muted leading-relaxed">
-          These go straight to Stripe. No cart. The evening kit is marlow_kit at $62 — Halo lantern plus 10m Filament. Shown links are the live Payment Links. We pack when the charge clears.
+          These go straight to Stripe. No cart. The evening kit is marlow_kit at $62 \u2014 Halo lantern plus 10m Filament. Shown links are the live Payment Links. We pack when the charge clears.
         </p>
         <ul className="mt-10 space-y-4">
           {posts.map((p) => {
