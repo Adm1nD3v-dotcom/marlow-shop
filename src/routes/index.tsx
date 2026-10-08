@@ -132,28 +132,37 @@ function Home() {
           </Link>
         </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {products.slice(0, 3).map((p) => (
-            <Link
-              key={p.id}
-              to="/product/$slug"
-              params={{ slug: p.slug }}
-              className="group overflow-hidden rounded-xl bg-elevated"
-            >
-              <div className="aspect-[4/5] overflow-hidden">
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  className="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-                />
-              </div>
-              <div className="flex items-baseline justify-between gap-3 p-4">
-                <div>
-                  <p className="font-medium">{p.name}</p>
-                  <p className="mt-1 text-sm text-muted">{p.tagline}</p>
+          {["kit", "halo", "filament"]
+            .map((id) => products.find((p) => p.id === id))
+            .filter((p): p is NonNullable<typeof p> => Boolean(p))
+            .map((p) => (
+            <div key={p.id} className="overflow-hidden rounded-xl bg-elevated">
+              <Link to="/product/$slug" params={{ slug: p.slug }} className="group block">
+                <div className="aspect-[4/5] overflow-hidden">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    className="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                  />
                 </div>
-                <p className="tabular-nums text-sm">{money(p.price)}</p>
+                <div className="flex items-baseline justify-between gap-3 p-4 pb-2">
+                  <div>
+                    <p className="font-medium">{p.name}</p>
+                    <p className="mt-1 text-sm text-muted">{p.tagline}</p>
+                  </div>
+                  <p className="tabular-nums text-sm">{money(p.price)}</p>
+                </div>
+              </Link>
+              <div className="px-4 pb-4">
+                <button
+                  type="button"
+                  className={cn(buttonVariants(), "w-full")}
+                  onClick={() => pay(p.id)}
+                >
+                  Buy now · {money(p.price)}
+                </button>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
