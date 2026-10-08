@@ -1,12 +1,22 @@
 export const posts = [
   {
+    slug: "two-boxes-one-charge",
+    title: "Two boxes, one charge",
+    dek: "The evening kit is still Halo plus Filament. Stripe collects the address. We pack when it clears.",
+    productSlug: "evening-kit",
+    body: [
+      "If you buy the kit, Stripe shows one line: Evening kit, Halo plus Filament, $62. That is two warehouse boxes on one charge, $5 under buying them apart. Free tracked US shipping. We do not hold a shelf of our own.",
+      "Charge Halo over lunch. Hang Filament where the panel still sees sky. The table stays low and amber. The pergola comes on when the yard goes blue. No countdown, no leftover-stock line. Pay link is the same one on the share page.",
+    ],
+  },
+  {
     slug: "place-it-low",
     title: "Place it low",
     dek: "Halo reads as a fire when it sits at table height. A rail turns it into a porch gadget.",
     productSlug: "halo-lantern",
     body: [
       "The first note we send after delivery is not a coupon. It is a placement. Set the lantern on the table, not the fence. Charge it over lunch. Let it burn through a long dusk.",
-      "That is the whole brand: an evening held, not a box unboxed. If the photograph you send back is of a family table, the picture writes itself — without a script and without a fake countdown.",
+      "That is the whole brand: an evening held, not a box unboxed. If the photograph you send back is of a family table, the picture writes itself \u2014 without a script and without a fake countdown.",
     ],
   },
   {
@@ -24,8 +34,8 @@ export const posts = [
     title: "How Marlow ships",
     dek: "Paid, then the warehouse. Nothing sits on a shelf of ours.",
     body: [
-      "When you place an order, the warehouse packs it. We do not keep a back room of lanterns. US warehouse pieces leave in a day and usually arrive in 5–9 days, tracked. A few travel pieces take 9–16.",
-      "We tell the truth on timing. Free tracked US shipping on every order. A 14-day photo-to-reship window. No “only 3 left” banners. No purchased reviews.",
+      "When you place an order, the warehouse packs it. We do not keep a back room of lanterns. US warehouse pieces leave in a day and usually arrive in 5\u20139 days, tracked. A few travel pieces take 9\u201316.",
+      "We tell the truth on timing. Free tracked US shipping on every order. A 14-day photo-to-reship window. No \u201conly 3 left\u201d banners. No purchased reviews.",
     ],
   },
   {
@@ -35,7 +45,7 @@ export const posts = [
     productSlug: "halo-lantern",
     body: [
       "Most patio lanterns are built to be seen from the street. Halo is built to be seen from a chair. The field is amber and low. Charge it over lunch on USB-C. It holds about eight hours, sealed against a wet evening.",
-      "It is not a bug zapper and not a party strobe. It is a light for a table, a step, or a rail — and it reads as a fire only if you keep it at table height. Ships from a US warehouse when you order. Free tracked shipping.",
+      "It is not a bug zapper and not a party strobe. It is a light for a table, a step, or a rail \u2014 and it reads as a fire only if you keep it at table height. Ships from a US warehouse when you order. Free tracked shipping.",
     ],
   },
   {
@@ -54,7 +64,7 @@ export const posts = [
     dek: "Halo on the table. Filament on the pergola. $5 under buying them apart.",
     productSlug: "evening-kit",
     body: [
-      "The pair is the order we want. Halo holds the table. Filament finishes the pergola. Bought apart they are $67. The kit is $62 — two boxes, one payment, US warehouse.",
+      "The pair is the order we want. Halo holds the table. Filament finishes the pergola. Bought apart they are $67. The kit is $62 \u2014 two boxes, one payment, US warehouse.",
       "That is not a fake countdown. It is the honest math of not making you click twice. Card on Stripe. Tracked. Pack when the charge clears.",
     ],
   },
@@ -64,7 +74,7 @@ export const posts = [
     dek: "Path lights, wall sconces, deck pucks. Warm amber. No motion-sensor flood.",
     productSlug: "stake-path-lights",
     body: [
-      "Amazon’s outdoor lighting aisle is a wall of white LEDs. We listed the other version: six path stakes, two wall sconces, eight deck pucks — all solar, all amber, all under a typical listing.",
+      "Amazon\u2019s outdoor lighting aisle is a wall of white LEDs. We listed the other version: six path stakes, two wall sconces, eight deck pucks \u2014 all solar, all amber, all under a typical listing.",
       "Stake is $24. Sconce is $28. Puck is $18. They belong with Halo on the table, not instead of it. Card on Stripe. Pack when the charge clears.",
     ],
   },
