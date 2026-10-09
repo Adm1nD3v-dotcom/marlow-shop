@@ -134,6 +134,86 @@ const posts = [
     caption:
       "Torch \u2014 four solar flicker stakes for the path edge. No open fire. $32. Free tracked US shipping.",
   },
+  {
+    id: "puck",
+    name: "Puck deck lights",
+    price: "$18",
+    sku: "marlow_puck",
+    caption:
+      "Puck \u2014 eight solar deck lights. Warm dots in the boards, no wiring. $18. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "canopy",
+    name: "Canopy umbrella light",
+    price: "$22",
+    sku: "marlow_canopy",
+    caption:
+      "Canopy \u2014 USB-C LED ring that clips under a patio umbrella. $22. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "well",
+    name: "Well hummingbird feeder",
+    price: "$18",
+    sku: "marlow_well",
+    caption:
+      "Well \u2014 clear glass feeder with a bone metal cap. A feeder, not a gadget. $18. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "grove",
+    name: "Grove olive stem",
+    price: "$32",
+    sku: "marlow_grove",
+    caption:
+      "Grove \u2014 faux olive stem in a matte ceramic pot. Indoor dusk, no watering. $32. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "loom",
+    name: "Loom table runner",
+    price: "$22",
+    sku: "marlow_loom",
+    caption:
+      "Loom \u2014 bone linen runner for the outdoor table. The cloth the lantern sits on. $22. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "quill",
+    name: "Quill serving board",
+    price: "$28",
+    sku: "marlow_quill",
+    caption:
+      "Quill \u2014 pale oak serving board. The board the evening is on. $28. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "noon",
+    name: "Noon lunch tote",
+    price: "$22",
+    sku: "marlow_noon",
+    caption:
+      "Noon \u2014 insulated lunch tote in bone canvas, sage stitch. $22. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "ledge",
+    name: "Ledge picnic table",
+    price: "$34",
+    sku: "marlow_ledge",
+    caption:
+      "Ledge \u2014 folding picnic wine table. Two glasses, Halo beside it. $34. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "reed",
+    name: "Reed outdoor throw",
+    price: "$36",
+    sku: "marlow_reed",
+    caption:
+      "Reed \u2014 heavy sage throw for the Adirondack after the sun drops. $36. Free tracked US shipping. Card on Stripe.",
+  },
+  {
+    id: "nimbus",
+    name: "Nimbus patio fan",
+    price: "$38",
+    sku: "marlow_nimbus",
+    caption:
+      "Nimbus \u2014 cordless oscillating patio fan. USB-C, quiet. $38. Free tracked US shipping. Card on Stripe.",
+  },
 ];
 
 export const Route = createFileRoute("/share")({
@@ -153,6 +233,7 @@ function payUrl(id: string) {
 
 function SharePage() {
   const [copied, setCopied] = useState<string | null>(null);
+  const listed = posts.filter((p) => stripeLinks[p.id]);
 
   async function copy(key: string, text: string) {
     try {
@@ -173,7 +254,7 @@ function SharePage() {
           These go straight to Stripe. No cart. The evening kit is marlow_kit at $62 \u2014 Halo lantern plus 10m Filament. Shown links are the live Payment Links. We pack when the charge clears.
         </p>
         <ul className="mt-10 space-y-4">
-          {posts.map((p) => {
+          {listed.map((p) => {
             const url = payUrl(p.id);
             return (
               <li key={p.id} className="rounded-xl bg-elevated p-5">
