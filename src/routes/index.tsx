@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
-      title: "Marlow — patio lanterns and dusk living",
+      title: "Marlow \u2014 patio lanterns and dusk living",
       description: SITE.description,
       path: "/",
     }),
@@ -49,7 +49,7 @@ function Home() {
         ) : null}
         <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/70 to-ink/30" />
         <div className="relative mx-auto flex min-h-[88dvh] max-w-6xl flex-col justify-end px-4 pb-16 pt-28 sm:px-6 sm:pb-24">
-          <p className="text-xs tracking-[0.22em] text-bone/80 uppercase">Marlow · open</p>
+          <p className="text-xs tracking-[0.22em] text-bone/80 uppercase">Marlow \u00b7 open</p>
           <h1 className="mt-4 max-w-xl font-display text-5xl leading-[1.05] tracking-tight sm:text-7xl">
             Light the yard.
             <br />
@@ -97,8 +97,8 @@ function Home() {
               <img src={kit.image} alt={kit.name} className="aspect-[4/5] w-full object-cover sm:aspect-[5/4]" />
             </Link>
             <div>
-              <p className="text-xs tracking-[0.22em] text-sage uppercase">The pair · marlow_kit</p>
-              <h2 className="mt-3 font-display text-3xl tracking-tight sm:text-4xl">Evening kit · {money(kit.price)}</h2>
+              <p className="text-xs tracking-[0.22em] text-sage uppercase">The pair \u00b7 marlow_kit</p>
+              <h2 className="mt-3 font-display text-3xl tracking-tight sm:text-4xl">Evening kit \u00b7 {money(kit.price)}</h2>
               <p className="mt-4 max-w-md text-muted leading-relaxed">{kit.description}</p>
               <p className="mt-3 text-xs text-subtle">
                 Typical apart {money(kit.compareAt ?? 6700)}. Not a countdown.
@@ -159,7 +159,7 @@ function Home() {
                   className={cn(buttonVariants(), "w-full")}
                   onClick={() => pay(p.id)}
                 >
-                  Buy now · {money(p.price)}
+                  Buy now \u00b7 {money(p.price)}
                 </button>
               </div>
             </div>
@@ -184,34 +184,40 @@ function Home() {
             </div>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {movers.map((p) => (
-                <Link
-                  key={p.id}
-                  to="/product/$slug"
-                  params={{ slug: p.slug }}
-                  className="group overflow-hidden rounded-xl bg-elevated"
-                >
-                  <div className="aspect-[4/5] overflow-hidden">
-                    <img
-                      src={p.image}
-                      alt={p.name}
-                      className="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <div className="flex items-baseline justify-between gap-3">
-                      <p className="font-medium">{p.name}</p>
-                      <p className="tabular-nums text-sm">{money(p.price)}</p>
+                <div key={p.id} className="overflow-hidden rounded-xl bg-elevated">
+                  <Link to="/product/$slug" params={{ slug: p.slug }} className="group block">
+                    <div className="aspect-[4/5] overflow-hidden">
+                      <img
+                        src={p.image}
+                        alt={p.name}
+                        className="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                      />
                     </div>
-                    {p.compareAt && p.compareAt > p.price ? (
-                      <p className="mt-1 text-xs text-subtle">
-                        Typical{" "}
-                        <span className="line-through tabular-nums">{money(p.compareAt)}</span>
-                      </p>
-                    ) : (
-                      <p className="mt-1 text-sm text-muted">{p.tagline}</p>
-                    )}
+                    <div className="p-4 pb-2">
+                      <div className="flex items-baseline justify-between gap-3">
+                        <p className="font-medium">{p.name}</p>
+                        <p className="tabular-nums text-sm">{money(p.price)}</p>
+                      </div>
+                      {p.compareAt && p.compareAt > p.price ? (
+                        <p className="mt-1 text-xs text-subtle">
+                          Typical{" "}
+                          <span className="line-through tabular-nums">{money(p.compareAt)}</span>
+                        </p>
+                      ) : (
+                        <p className="mt-1 text-sm text-muted">{p.tagline}</p>
+                      )}
+                    </div>
+                  </Link>
+                  <div className="px-4 pb-4">
+                    <button
+                      type="button"
+                      className={cn(buttonVariants(), "w-full")}
+                      onClick={() => pay(p.id)}
+                    >
+                      Buy now \u00b7 {money(p.price)}
+                    </button>
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </div>
@@ -224,7 +230,7 @@ function Home() {
             <p className="text-xs tracking-[0.22em] text-sage uppercase">Open</p>
             <h2 className="mt-3 font-display text-3xl tracking-tight sm:text-4xl">Pay, then the warehouse.</h2>
             <p className="mt-4 max-w-md text-muted leading-relaxed">
-              Card on Stripe. We pack when the charge clears. Tracked in 5–9 days from the US warehouse. Free shipping on every order.
+              Card on Stripe. We pack when the charge clears. Tracked in 5\u20139 days from the US warehouse. Free shipping on every order.
             </p>
             <Link to="/policies" className={cn("mt-8", buttonVariants({ variant: "ghost" }))}>
               Shipping & returns
@@ -234,7 +240,7 @@ function Home() {
             {[
               ["01", "You pay", "Card on Stripe. Address collected there."],
               ["02", "We pack", "Ships from a US warehouse when the charge clears."],
-              ["03", "Tracked, 5–9 days", "Free US shipping. 14-day photo-to-reship."],
+              ["03", "Tracked, 5\u20139 days", "Free US shipping. 14-day photo-to-reship."],
             ].map(([n, t, d]) => (
               <li key={n} className="flex gap-4 rounded-lg bg-elevated p-4">
                 <span className="tabular-nums text-sm text-sage">{n}</span>
