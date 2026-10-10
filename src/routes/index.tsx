@@ -56,7 +56,7 @@ function Home() {
             Keep the night.
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-bone/80 sm:text-lg">
-            The evening kit is the Halo lantern plus 10m Filament solar lights. {kitPrice} on Stripe. Free tracked US shipping.
+            Evening kit: Halo lantern + 10m Filament solar lights. {kitPrice} total \u2014 $5 under separate. Free tracked US shipping. Ships when charge clears.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <button
