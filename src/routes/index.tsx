@@ -61,17 +61,17 @@ function Home() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <button
               type="button"
-              className={cn(buttonVariants({ size: "lg" }))}
+              className={cn(buttonVariants({ size: "lg" }), "text-base font-semibold")}
               onClick={() => pay("kit")}
             >
-              Buy evening kit now {kitPrice}
+              Buy evening kit \u00b7 {kitPrice}
             </button>
             <button
               type="button"
               className={cn(buttonVariants({ size: "lg", variant: "ghost" }))}
               onClick={() => pay("halo")}
             >
-              Buy Halo {halo ? money(halo.price) : "$39"}
+              Halo only {halo ? money(halo.price) : "$39"}
             </button>
             {kit ? (
               <Link
@@ -106,10 +106,10 @@ function Home() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <button
                   type="button"
-                  className={cn(buttonVariants({ size: "lg" }))}
+                  className={cn(buttonVariants({ size: "lg" }), "font-semibold")}
                   onClick={() => pay("kit")}
                 >
-                  Buy the kit now {money(kit.price)}
+                  Buy the kit now \u00b7 {money(kit.price)}
                 </button>
                 <Link
                   to="/product/$slug"
@@ -257,10 +257,10 @@ function Home() {
       <div className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-ink/95 p-3 backdrop-blur-sm lg:hidden">
         <button
           type="button"
-          className={cn(buttonVariants({ size: "lg" }), "w-full")}
+          className={cn(buttonVariants({ size: "lg" }), "w-full font-semibold")}
           onClick={() => pay("kit")}
         >
-          Buy evening kit now {kitPrice}
+          Buy evening kit \u00b7 {kitPrice}
         </button>
       </div>
     </StoreShell>
