@@ -12,7 +12,7 @@ const posts = [
     price: "$62",
     sku: "marlow_kit",
     caption:
-      "Evening kit \u2014 Halo lantern + 10m Filament solar lights. $62 for the pair, $5 under buying them apart. Two boxes from the US warehouse. Free tracked shipping. One Stripe link, we pack when it clears. Table and pergola, same night. Share the link, they pay, we ship.",
+      "Light the yard tonight. Evening kit \u2014 Halo lantern + 10m Filament solar lights for $62 (saves $5 vs separate). Free tracked US shipping. One Stripe link, we pack when it clears. Table and pergola ready. Share this: https://buy.stripe.com/fZu9AS8b2enPbDnb0TfAc0a",
   },
   {
     id: "halo",
@@ -20,7 +20,7 @@ const posts = [
     price: "$39",
     sku: "marlow_halo",
     caption:
-      "Halo \u2014 rechargeable patio lantern for the table. USB-C, eight-hour amber, IPX4. $39. Free tracked US shipping. Card on Stripe.",
+      "Halo \u2014 the rechargeable patio lantern that holds the evening. USB-C, 8hr amber, IPX4. $39 with free tracked US shipping. Card on Stripe. Get yours: https://buy.stripe.com/9B600iezq0wZ9vfc4XfAc00",
   },
   {
     id: "filament",
@@ -28,7 +28,7 @@ const posts = [
     price: "$28",
     sku: "marlow_filament",
     caption:
-      "Filament \u2014 10m solar string lights. Dusk-to-dawn, no outdoor outlet. $28. Free tracked US shipping.",
+      "Filament \u2014 10m solar string lights for the pergola. Dusk-to-dawn, no outlet needed. $28, free tracked US shipping. https://buy.stripe.com/8x2eVcezq5RjdLv8SLfAc01",
   },
   {
     id: "drift",

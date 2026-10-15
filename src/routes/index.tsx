@@ -61,10 +61,10 @@ function Home() {
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <button
               type="button"
-              className={cn(buttonVariants({ size: "lg" }), "text-base font-semibold")}
+              className={cn(buttonVariants({ size: "lg" }), "text-base font-semibold bg-sage hover:bg-sage/90")}
               onClick={() => pay("kit")}
             >
-              Buy evening kit \u00b7 {kitPrice}
+              Buy the evening kit now \u00b7 {kitPrice}
             </button>
             <button
               type="button"
@@ -106,7 +106,7 @@ function Home() {
               <div className="mt-8 flex flex-wrap gap-3">
                 <button
                   type="button"
-                  className={cn(buttonVariants({ size: "lg" }), "font-semibold")}
+                  className={cn(buttonVariants({ size: "lg" }), "font-semibold bg-sage")}
                   onClick={() => pay("kit")}
                 >
                   Buy the kit now \u00b7 {money(kit.price)}
