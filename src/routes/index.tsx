@@ -56,7 +56,7 @@ function Home() {
             Keep the night.
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-bone/80 sm:text-lg">
-            Get the evening kit tonight: Halo lantern + 10m Filament solar lights for {kitPrice}. Saves $5 versus buying separate. Free tracked US shipping. Pay on Stripe — we pack and ship when it clears.
+            Evening kit: Halo rechargeable patio lantern + 10m Filament solar string lights. {kitPrice}. $5 under buying them apart. Free tracked US shipping. Pay on Stripe — we pack both boxes when the charge clears.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <button
@@ -64,7 +64,7 @@ function Home() {
               className={cn(buttonVariants({ size: "lg" }), "text-base font-semibold bg-sage hover:bg-sage/90")}
               onClick={() => pay("kit")}
             >
-              Buy the evening kit now \u00b7 {kitPrice}
+              Get the evening kit · {kitPrice}
             </button>
             <button
               type="button"
@@ -109,7 +109,7 @@ function Home() {
                   className={cn(buttonVariants({ size: "lg" }), "font-semibold bg-sage")}
                   onClick={() => pay("kit")}
                 >
-                  Buy the kit now \u00b7 {money(kit.price)}
+                  Buy the kit now · {money(kit.price)}
                 </button>
                 <Link
                   to="/product/$slug"
@@ -159,7 +159,7 @@ function Home() {
                   className={cn(buttonVariants(), "w-full")}
                   onClick={() => pay(p.id)}
                 >
-                  Buy now \u00b7 {money(p.price)}
+                  Buy now · {money(p.price)}
                 </button>
               </div>
             </div>
@@ -214,7 +214,7 @@ function Home() {
                       className={cn(buttonVariants(), "w-full")}
                       onClick={() => pay(p.id)}
                     >
-                      Buy now \u00b7 {money(p.price)}
+                      Buy now · {money(p.price)}
                     </button>
                   </div>
                 </div>
@@ -260,7 +260,7 @@ function Home() {
           className={cn(buttonVariants({ size: "lg" }), "w-full font-semibold")}
           onClick={() => pay("kit")}
         >
-          Buy evening kit \u00b7 {kitPrice}
+          Get evening kit · {kitPrice}
         </button>
       </div>
     </StoreShell>
