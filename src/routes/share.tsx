@@ -12,7 +12,7 @@ const posts = [
     price: "$62",
     sku: "marlow_kit",
     caption:
-      "Light the yard tonight. Evening kit \u2014 Halo lantern + 10m Filament solar lights for $62 (saves $5 vs separate). Free tracked US shipping. One Stripe link, we pack when it clears. Table and pergola ready. Share this: https://buy.stripe.com/fZu9AS8b2enPbDnb0TfAc0a",
+      "Evening kit — Halo rechargeable patio lantern + 10m Filament solar string lights. $62 (saves $5 vs separate). Free tracked US shipping. Pay on Stripe, we pack both boxes when it clears. https://buy.stripe.com/fZu9AS8b2enPbDnb0TfAc0a",
   },
   {
     id: "halo",
@@ -20,7 +20,7 @@ const posts = [
     price: "$39",
     sku: "marlow_halo",
     caption:
-      "Halo \u2014 the rechargeable patio lantern that holds the evening. USB-C, 8hr amber, IPX4. $39 with free tracked US shipping. Card on Stripe. Get yours: https://buy.stripe.com/9B600iezq0wZ9vfc4XfAc00",
+      "Halo — the rechargeable patio lantern that holds the evening. USB-C, 8hr amber, IPX4. $39 with free tracked US shipping. Card on Stripe. Get yours: https://buy.stripe.com/9B600iezq0wZ9vfc4XfAc00",
   },
   {
     id: "filament",
@@ -28,7 +28,7 @@ const posts = [
     price: "$28",
     sku: "marlow_filament",
     caption:
-      "Filament \u2014 10m solar string lights for the pergola. Dusk-to-dawn, no outlet needed. $28, free tracked US shipping. https://buy.stripe.com/8x2eVcezq5RjdLv8SLfAc01",
+      "Filament — 10m solar string lights for the pergola. Dusk-to-dawn, no outlet needed. $28, free tracked US shipping. https://buy.stripe.com/8x2eVcezq5RjdLv8SLfAc01",
   },
   {
     id: "drift",
@@ -36,7 +36,7 @@ const posts = [
     price: "$24",
     sku: "marlow_drift",
     caption:
-      "Drift \u2014 10L roll-top dry bag in matte sage. Keep the night kit dry. $24. Free tracked US shipping. Card on Stripe.",
+      "Drift — 10L roll-top dry bag in matte sage. Keep the night kit dry. $24. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "shore",
@@ -44,7 +44,7 @@ const posts = [
     price: "$42",
     sku: "marlow_shore",
     caption:
-      "Shore \u2014 insulated picnic tote. Two people, one evening. $42. Free tracked US shipping. Card on Stripe.",
+      "Shore — insulated picnic tote. Two people, one evening. $42. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "vesper",
@@ -52,7 +52,7 @@ const posts = [
     price: "$16",
     sku: "marlow_vesper",
     caption:
-      "Vesper \u2014 amber glass patio oil, two-pack. A quieter table. $16. Free tracked US shipping. Card on Stripe.",
+      "Vesper — amber glass patio oil, two-pack. A quieter table. $16. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "kiln",
@@ -60,7 +60,7 @@ const posts = [
     price: "$24",
     sku: "marlow_kiln",
     caption:
-      "Kiln \u2014 32oz insulated sip bottle. Unbranded bone steel. $24. Free tracked US shipping.",
+      "Kiln — 32oz insulated sip bottle. Unbranded bone steel. $24. Free tracked US shipping.",
   },
   {
     id: "pulse",
@@ -68,7 +68,7 @@ const posts = [
     price: "$28",
     sku: "marlow_pulse",
     caption:
-      "Pulse \u2014 USB-C personal blender, 22oz cup. Breakfast in twenty seconds. $28. Free tracked US shipping. Card on Stripe.",
+      "Pulse — USB-C personal blender, 22oz cup. Breakfast in twenty seconds. $28. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "meadow",
@@ -76,7 +76,7 @@ const posts = [
     price: "$24",
     sku: "marlow_meadow",
     caption:
-      "Meadow \u2014 waterproof picnic cloth. Bone canvas, folds into itself. $24. Free tracked US shipping.",
+      "Meadow — waterproof picnic cloth. Bone canvas, folds into itself. $24. Free tracked US shipping.",
   },
   {
     id: "ember",
@@ -84,7 +84,7 @@ const posts = [
     price: "$34",
     sku: "marlow_ember",
     caption:
-      "Ember \u2014 LED flame in smoked glass. No heat, no oil. The indoor dusk. $34. Free tracked US shipping. Card on Stripe.",
+      "Ember — LED flame in smoked glass. No heat, no oil. The indoor dusk. $34. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "field",
@@ -92,7 +92,7 @@ const posts = [
     price: "$14",
     sku: "marlow_field",
     caption:
-      "Field \u2014 sage silicone grooming glove, right-hand. $14. Free tracked US shipping. Card on Stripe.",
+      "Field — sage silicone grooming glove, right-hand. $14. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "stake",
@@ -100,7 +100,7 @@ const posts = [
     price: "$24",
     sku: "marlow_stake",
     caption:
-      "Stake \u2014 six solar pathway lights, warm amber. $24. Free tracked US shipping.",
+      "Stake — six solar pathway lights, warm amber. $24. Free tracked US shipping.",
   },
   {
     id: "wick",
@@ -108,7 +108,7 @@ const posts = [
     price: "$24",
     sku: "marlow_wick",
     caption:
-      "Wick \u2014 three rechargeable LED candles. Indoor dusk, no wax. $24. Free tracked US shipping.",
+      "Wick — three rechargeable LED candles. Indoor dusk, no wax. $24. Free tracked US shipping.",
   },
   {
     id: "globe",
@@ -116,7 +116,7 @@ const posts = [
     price: "$22",
     sku: "marlow_globe",
     caption:
-      "Globe \u2014 two cracked-glass solar globes for the table. $22. Free tracked US shipping.",
+      "Globe — two cracked-glass solar globes for the table. $22. Free tracked US shipping.",
   },
   {
     id: "sconce",
@@ -124,7 +124,7 @@ const posts = [
     price: "$28",
     sku: "marlow_sconce",
     caption:
-      "Sconce \u2014 two solar wall lights for the fence or stoop. $28. Free tracked US shipping.",
+      "Sconce — two solar wall lights for the fence or stoop. $28. Free tracked US shipping.",
   },
   {
     id: "torch",
@@ -132,7 +132,7 @@ const posts = [
     price: "$32",
     sku: "marlow_torch",
     caption:
-      "Torch \u2014 four solar flicker stakes for the path edge. No open fire. $32. Free tracked US shipping.",
+      "Torch — four solar flicker stakes for the path edge. No open fire. $32. Free tracked US shipping.",
   },
   {
     id: "puck",
@@ -140,7 +140,7 @@ const posts = [
     price: "$18",
     sku: "marlow_puck",
     caption:
-      "Puck \u2014 eight solar deck lights. Warm dots in the boards, no wiring. $18. Free tracked US shipping. Card on Stripe.",
+      "Puck — eight solar deck lights. Warm dots in the boards, no wiring. $18. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "canopy",
@@ -148,7 +148,7 @@ const posts = [
     price: "$22",
     sku: "marlow_canopy",
     caption:
-      "Canopy \u2014 USB-C LED ring that clips under a patio umbrella. $22. Free tracked US shipping. Card on Stripe.",
+      "Canopy — USB-C LED ring that clips under a patio umbrella. $22. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "well",
@@ -156,7 +156,7 @@ const posts = [
     price: "$18",
     sku: "marlow_well",
     caption:
-      "Well \u2014 clear glass feeder with a bone metal cap. A feeder, not a gadget. $18. Free tracked US shipping. Card on Stripe.",
+      "Well — clear glass feeder with a bone metal cap. A feeder, not a gadget. $18. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "grove",
@@ -164,7 +164,7 @@ const posts = [
     price: "$32",
     sku: "marlow_grove",
     caption:
-      "Grove \u2014 faux olive stem in a matte ceramic pot. Indoor dusk, no watering. $32. Free tracked US shipping. Card on Stripe.",
+      "Grove — faux olive stem in a matte ceramic pot. Indoor dusk, no watering. $32. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "loom",
@@ -172,7 +172,7 @@ const posts = [
     price: "$22",
     sku: "marlow_loom",
     caption:
-      "Loom \u2014 bone linen runner for the outdoor table. The cloth the lantern sits on. $22. Free tracked US shipping. Card on Stripe.",
+      "Loom — bone linen runner for the outdoor table. The cloth the lantern sits on. $22. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "quill",
@@ -180,7 +180,7 @@ const posts = [
     price: "$28",
     sku: "marlow_quill",
     caption:
-      "Quill \u2014 pale oak serving board. The board the evening is on. $28. Free tracked US shipping. Card on Stripe.",
+      "Quill — pale oak serving board. The board the evening is on. $28. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "noon",
@@ -188,7 +188,7 @@ const posts = [
     price: "$22",
     sku: "marlow_noon",
     caption:
-      "Noon \u2014 insulated lunch tote in bone canvas, sage stitch. $22. Free tracked US shipping. Card on Stripe.",
+      "Noon — insulated lunch tote in bone canvas, sage stitch. $22. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "ledge",
@@ -196,7 +196,7 @@ const posts = [
     price: "$34",
     sku: "marlow_ledge",
     caption:
-      "Ledge \u2014 folding picnic wine table. Two glasses, Halo beside it. $34. Free tracked US shipping. Card on Stripe.",
+      "Ledge — folding picnic wine table. Two glasses, Halo beside it. $34. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "reed",
@@ -204,7 +204,7 @@ const posts = [
     price: "$36",
     sku: "marlow_reed",
     caption:
-      "Reed \u2014 heavy sage throw for the Adirondack after the sun drops. $36. Free tracked US shipping. Card on Stripe.",
+      "Reed — heavy sage throw for the Adirondack after the sun drops. $36. Free tracked US shipping. Card on Stripe.",
   },
   {
     id: "nimbus",
@@ -212,7 +212,7 @@ const posts = [
     price: "$38",
     sku: "marlow_nimbus",
     caption:
-      "Nimbus \u2014 cordless oscillating patio fan. USB-C, quiet. $38. Free tracked US shipping. Card on Stripe.",
+      "Nimbus — cordless oscillating patio fan. USB-C, quiet. $38. Free tracked US shipping. Card on Stripe.",
   },
 ];
 
