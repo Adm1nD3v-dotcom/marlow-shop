@@ -64,7 +64,7 @@ function Home() {
               className={cn(buttonVariants({ size: "lg" }), "text-base font-semibold bg-sage hover:bg-sage/90")}
               onClick={() => pay("kit")}
             >
-              Get the evening kit · {kitPrice}
+              Get both boxes · evening kit {kitPrice}
             </button>
             <button
               type="button"
@@ -109,7 +109,7 @@ function Home() {
                   className={cn(buttonVariants({ size: "lg" }), "font-semibold bg-sage")}
                   onClick={() => pay("kit")}
                 >
-                  Buy the kit now · {money(kit.price)}
+                  Buy both boxes now · {money(kit.price)}
                 </button>
                 <Link
                   to="/product/$slug"
@@ -260,7 +260,7 @@ function Home() {
           className={cn(buttonVariants({ size: "lg" }), "w-full font-semibold")}
           onClick={() => pay("kit")}
         >
-          Get evening kit · {kitPrice}
+          Get both boxes · evening kit {kitPrice}
         </button>
       </div>
     </StoreShell>
