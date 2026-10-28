@@ -12,7 +12,7 @@ const posts = [
     price: "$62",
     sku: "marlow_kit",
     caption:
-      "Light the yard tonight. Evening kit: Halo rechargeable patio lantern + 10m Filament solar string lights for $62 (saves $5 vs buying separate). Free tracked US shipping. One Stripe link — we pack both boxes when the charge clears. Table and pergola ready. https://buy.stripe.com/fZu9AS8b2enPbDnb0TfAc0a",
+      "One link, both boxes. Evening kit: Halo rechargeable patio lantern + 10m Filament solar string lights. $62 (saves $5). Free tracked US shipping. Pay on Stripe — we pack when it clears. Table and pergola ready tonight. https://buy.stripe.com/fZu9AS8b2enPbDnb0TfAc0a",
   },
   {
     id: "halo",
