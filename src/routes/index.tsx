@@ -56,7 +56,7 @@ function Home() {
             Keep the night.
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-bone/80 sm:text-lg">
-            Evening kit: Halo rechargeable patio lantern + 10m Filament solar string lights. {kitPrice} (saves $5). Free tracked US shipping. No cart \u2014 pay on Stripe, we pack both boxes when the charge clears.
+            Get the evening kit: Halo lantern + 10m Filament solar lights for {kitPrice}. Save $5 vs buying apart. Free tracked US shipping. Pay on Stripe \u2014 we pack both boxes when it clears.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <button
@@ -64,7 +64,7 @@ function Home() {
               className={cn(buttonVariants({ size: "lg" }), "text-base font-semibold bg-sage hover:bg-sage/90")}
               onClick={() => pay("kit")}
             >
-              Get both boxes \u00b7 evening kit {kitPrice}
+              Buy evening kit now \u00b7 {kitPrice} (saves $5)
             </button>
             <button
               type="button"
@@ -260,7 +260,7 @@ function Home() {
           className={cn(buttonVariants({ size: "lg" }), "w-full font-semibold")}
           onClick={() => pay("kit")}
         >
-          Get both boxes \u00b7 evening kit {kitPrice}
+          Buy evening kit now \u00b7 {kitPrice} (saves $5)
         </button>
       </div>
     </StoreShell>
