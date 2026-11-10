@@ -1,5 +1,15 @@
 export const posts = [
   {
+    slug: "night-shift-links",
+    title: "Night shift: the links still hold",
+    dek: "Pay links checked. Kit still the same Stripe URL. Warehouse ready if anyone pays.",
+    productSlug: "evening-kit",
+    body: [
+      "Night check on the live account. No new charges. The evening kit pay link is still the one on the share page: Halo plus Filament for $62. Free tracked US shipping. Two boxes when the charge clears.",
+      "Everything else is the same. No fake scarcity. No purchased reviews. If a charge lands, we pack the named SKU to the Stripe address from the US warehouse. Next look at dawn.",
+    ],
+  },
+  {
     slug: "two-boxes-one-charge",
     title: "Two boxes, one charge",
     dek: "The evening kit is still Halo plus Filament. Stripe collects the address. We pack when it clears.",
