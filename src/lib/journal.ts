@@ -1,5 +1,15 @@
 export const posts = [
   {
+    slug: "night-shift-unpaid",
+    title: "Night shift: open is not paid",
+    dek: "One open kit session on Stripe. Still unpaid. Links match. Warehouse waits for a clear charge.",
+    productSlug: "evening-kit",
+    body: [
+      "Live account check. Zero charges, zero payment intents. One open Checkout Session for the evening kit at $62, still unpaid, expires soon. That is not an order. We do not pack until the charge clears.",
+      "Kit pay link remains https://buy.stripe.com/fZu9AS8b2enPbDnb0TfAc0a and matches the /share page. Halo, Filament, and the rest of the catalog are the same. Free tracked US shipping. Next check at dawn.",
+    ],
+  },
+  {
     slug: "night-shift-links",
     title: "Night shift: the links still hold",
     dek: "Pay links checked. Kit still the same Stripe URL. Warehouse ready if anyone pays.",
