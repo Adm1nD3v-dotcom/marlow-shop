@@ -12,7 +12,7 @@ const posts = [
     price: "$62",
     sku: "marlow_kit",
     caption:
-      "One link, both boxes. Evening kit: Halo rechargeable patio lantern + 10m Filament solar string lights. $62 (saves $5 vs separate). Free tracked US shipping from US warehouse. Pay on Stripe — we pack both when it clears. Table and pergola ready for dusk. Get the pair now:",
+      "One pay. Two boxes. The evening kit is Halo lantern + 10m Filament solar lights for $62 — $5 under buying apart. Free tracked US shipping from the warehouse. Card on Stripe, we pack when it clears. Table and pergola ready for dusk. Get the pair:",
   },
   {
     id: "halo",
@@ -20,7 +20,7 @@ const posts = [
     price: "$39",
     sku: "marlow_halo",
     caption:
-      "Halo — the rechargeable patio lantern that holds the evening. USB-C, 8hr amber, IPX4. $39 with free tracked US shipping. Card on Stripe. Get yours now:",
+      "Halo — rechargeable patio lantern for the table. USB-C, 8hr amber, IPX4. $39. Free tracked US shipping. Card on Stripe. Holds the evening:",
   },
   {
     id: "filament",
@@ -28,9 +28,8 @@ const posts = [
     price: "$28",
     sku: "marlow_filament",
     caption:
-      "Filament — 10m solar string lights for the pergola. Dusk-to-dawn, no outlet needed. $28, free tracked US shipping. Card on Stripe. Order the string:",
+      "Filament — 10m solar string lights. Dusk-to-dawn, no outdoor outlet. $28. Free tracked US shipping. Card on Stripe. Finish the pergola:",
   },
-  // Additional products kept in sync with live /share and stripeLinks
   {
     id: "drift",
     name: "Drift dry bag",
