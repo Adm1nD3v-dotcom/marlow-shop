@@ -12,7 +12,7 @@ const posts = [
     price: "$62",
     sku: "marlow_kit",
     caption:
-      "One pay. Two boxes. Evening kit: Halo lantern + 10m Filament solar lights for $62 — $5 under buying apart. Free tracked US shipping from the warehouse. Card on Stripe, we pack when it clears. Table and pergola ready for dusk. Buy the pair now:",
+      "One pay. Two boxes. Get the Evening kit now: Halo lantern + 10m Filament solar lights for $62 — $5 under buying apart. Free tracked US shipping from the warehouse. Card on Stripe, we pack when it clears. Table and pergola ready for dusk. Buy the pair:",
   },
   {
     id: "halo",
@@ -20,7 +20,7 @@ const posts = [
     price: "$39",
     sku: "marlow_halo",
     caption:
-      "Halo — rechargeable patio lantern for the table. USB-C, 8hr amber, IPX4. $39. Free tracked US shipping. Card on Stripe. Holds the evening. Buy the lantern now:",
+      "Halo — rechargeable patio lantern for the table. USB-C, 8hr amber, IPX4. $39. Free tracked US shipping. Card on Stripe. Holds the evening. Get yours now:",
   },
   {
     id: "filament",
@@ -36,7 +36,7 @@ const posts = [
     price: "$24",
     sku: "marlow_drift",
     caption:
-      "Drift — 10L roll-top dry bag in matte sage. Keep the night kit dry. $24. Free tracked US shipping. Card on Stripe.",
+      "Drift — 10L roll-top dry bag in matte sage. Keep the night kit dry. $24. Free tracked US shipping. Card on Stripe. Grab it:",
   },
   {
     id: "shore",
@@ -44,7 +44,7 @@ const posts = [
     price: "$42",
     sku: "marlow_shore",
     caption:
-      "Shore — insulated picnic tote. Two people, one evening. $42. Free tracked US shipping. Card on Stripe.",
+      "Shore — insulated picnic tote. Two people, one evening. $42. Free tracked US shipping. Card on Stripe. Order now:",
   },
   {
     id: "vesper",
@@ -52,7 +52,7 @@ const posts = [
     price: "$16",
     sku: "marlow_vesper",
     caption:
-      "Vesper — amber glass patio oil, two-pack. A quieter table. $16. Free tracked US shipping. Card on Stripe.",
+      "Vesper — amber glass patio oil, two-pack. A quieter table. $16. Free tracked US shipping. Card on Stripe. Add to the evening:",
   },
   {
     id: "kiln",
@@ -60,7 +60,7 @@ const posts = [
     price: "$24",
     sku: "marlow_kiln",
     caption:
-      "Kiln — 32oz insulated sip bottle. Unbranded bone steel. $24. Free tracked US shipping.",
+      "Kiln — 32oz insulated sip bottle. Unbranded bone steel. $24. Free tracked US shipping. Get one:",
   },
   {
     id: "pulse",
@@ -68,7 +68,7 @@ const posts = [
     price: "$28",
     sku: "marlow_pulse",
     caption:
-      "Pulse — USB-C personal blender, 22oz cup. Breakfast in twenty seconds. $28. Free tracked US shipping. Card on Stripe.",
+      "Pulse — USB-C personal blender, 22oz cup. Breakfast in twenty seconds. $28. Free tracked US shipping. Card on Stripe. Buy now:",
   },
   {
     id: "meadow",
@@ -76,7 +76,7 @@ const posts = [
     price: "$24",
     sku: "marlow_meadow",
     caption:
-      "Meadow — waterproof picnic cloth. Bone canvas, folds into itself. $24. Free tracked US shipping.",
+      "Meadow — waterproof picnic cloth. Bone canvas, folds into itself. $24. Free tracked US shipping. Order the cloth:",
   },
   {
     id: "ember",
@@ -84,7 +84,7 @@ const posts = [
     price: "$34",
     sku: "marlow_ember",
     caption:
-      "Ember — LED flame in smoked glass. No heat, no oil. The indoor dusk. $34. Free tracked US shipping. Card on Stripe.",
+      "Ember — LED flame in smoked glass. No heat, no oil. The indoor dusk. $34. Free tracked US shipping. Card on Stripe. Light it up:",
   },
   {
     id: "field",
@@ -92,7 +92,7 @@ const posts = [
     price: "$14",
     sku: "marlow_field",
     caption:
-      "Field — sage silicone grooming glove, right-hand. $14. Free tracked US shipping. Card on Stripe.",
+      "Field — sage silicone grooming glove, right-hand. $14. Free tracked US shipping. Card on Stripe. Get the glove:",
   },
   {
     id: "stake",
@@ -100,7 +100,7 @@ const posts = [
     price: "$24",
     sku: "marlow_stake",
     caption:
-      "Stake — six solar pathway lights, warm amber. $24. Free tracked US shipping.",
+      "Stake — six solar pathway lights, warm amber. $24. Free tracked US shipping. Buy the path lights:",
   },
   {
     id: "wick",
@@ -108,7 +108,7 @@ const posts = [
     price: "$24",
     sku: "marlow_wick",
     caption:
-      "Wick — three rechargeable LED candles. Indoor dusk, no wax. $24. Free tracked US shipping.",
+      "Wick — three rechargeable LED candles. Indoor dusk, no wax. $24. Free tracked US shipping. Order the set:",
   },
   {
     id: "globe",
@@ -116,7 +116,7 @@ const posts = [
     price: "$22",
     sku: "marlow_globe",
     caption:
-      "Globe — two cracked-glass solar globes for the table. $22. Free tracked US shipping.",
+      "Globe — two cracked-glass solar globes for the table. $22. Free tracked US shipping. Get the globes:",
   },
   {
     id: "sconce",
@@ -124,7 +124,7 @@ const posts = [
     price: "$28",
     sku: "marlow_sconce",
     caption:
-      "Sconce — two solar wall lights for the fence or stoop. $28. Free tracked US shipping.",
+      "Sconce — two solar wall lights for the fence or stoop. $28. Free tracked US shipping. Buy the sconces:",
   },
   {
     id: "torch",
@@ -132,7 +132,7 @@ const posts = [
     price: "$32",
     sku: "marlow_torch",
     caption:
-      "Torch — four solar flicker stakes for the path edge. No open fire. $32. Free tracked US shipping.",
+      "Torch — four solar flicker stakes for the path edge. No open fire. $32. Free tracked US shipping. Get the stakes:",
   },
 ];
 
