@@ -12,7 +12,7 @@ const posts = [
     price: "$62",
     sku: "marlow_kit",
     caption:
-      "One pay. Two boxes. Evening kit: Halo lantern + 10m Filament solar lights for $62 — $5 under buying apart. Free tracked US shipping from the warehouse. Card on Stripe, we pack when it clears. Table and pergola ready for dusk. Buy the pair now:",
+      "One pay. Two boxes. The evening kit is Halo lantern + 10m Filament solar lights for $62 ($5 under buying them apart). Free tracked US shipping from the warehouse. Card on Stripe — we pack when the charge clears. Table and pergola for dusk. Buy the pair:",
   },
   {
     id: "halo",
